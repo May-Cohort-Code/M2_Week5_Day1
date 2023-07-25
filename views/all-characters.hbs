@@ -1,0 +1,11 @@
+<h1>All Characters</h1>
+
+{{#each allCharacters}}
+    <h2>name:{{name}}</h2>
+    <h2>{{occupation}}</h2>
+    <a href="/characters/{{id}}">See Details</a>
+    <form action="/characters/{{id}}/delete" method="post">
+    <button>Delete character</button>
+    </form>
+    <a href="/characters/{{id}}/edit">edit your character</a>
+{{/each}}

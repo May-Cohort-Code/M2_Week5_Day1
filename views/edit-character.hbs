@@ -1,0 +1,15 @@
+<form action="/characters/{{character.id}}/edit" method="post">
+    <label for="">
+        name
+        <input type="text" value="{{character.name}}" name="name">
+    </label>
+        <label for="">
+        occupation
+        <input type="text" value="{{character.occupation}}" name="occupation">
+    </label>
+        <label for="">
+        weapon
+        <input type="text" value="{{character.weapon}}" name="weapon">
+    </label>
+    <button>Change</button>
+</form>
